@@ -5,11 +5,12 @@ Created on Wed Mar  6 11:10:24 2024
 
 @author: williamchung
 """
-
+#輸入數字
 decimal = int(input('請輸入0~255間的數字:'))
 list = []
 binary = ''
 
+#將數字轉換成二進位
 if decimal > 2**8:
     print('請輸入0~255間的數字!')
 else:
@@ -22,7 +23,8 @@ else:
         binary += str(list[i])
     print('二進位：')
     print(binary)
-    
+
+#將二進位數字轉換成十六進位
 sum_1 = 0  
 sum_2 = 0 
 for i in range(3,-1,-1):
